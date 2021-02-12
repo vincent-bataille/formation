@@ -1,0 +1,53 @@
+# connaitre la version :
+git version
+# configuration :
+git config --global user.name "Vincent BATAILLE"
+git config --global user.mail vincent.bataille.mail@gmail.com
+git config --global --list
+
+# création du repository GIT :
+# dans le dossier :
+git init
+# (crée un répertoire .git dans le dossier)
+
+# connaitre le status
+git status
+
+# connaitre ce qui a été modifié depuis le dernier git commit
+git diff
+
+# voir l'ensemble des commit
+git log
+git log -n 2
+git show id-commit
+
+# se placer sur un commit
+git checkout id-commit
+
+# ajouter un tag à un commit
+# se déplacer dans le commit avec checkout
+git tag nom-du-tag
+# supprimer le tag :
+git tag --delete nom-du-tag
+
+# ramener depot github sur local
+git clone https://github.com/vincent-bataille/formation2.git clone_formation2
+
+# voir les remote (liens)
+git remote -v
+git remote show origin
+
+# envoyer les modifications au depot github
+git push remote-name branch-name
+ex git push origin master
+# push des tags
+git push --tags
+
+# recuperer les modifications du depot github
+git pull
+git fetch
+
+# plus d'info sur les modifs d'un fichier 
+git blame nom-du-fichier
+
+
