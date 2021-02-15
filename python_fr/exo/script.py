@@ -4,5 +4,6 @@ print("Hello world")
 numero=1_000_000
 print(numero)
 
-print (str(5))
+nombre = input("entrez un nombre : ")
+print(nombre)
 exit()
