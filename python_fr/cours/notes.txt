@@ -1,0 +1,4 @@
+Les chaines de caractères :
+>>> print(r'c:\dossier\tibo\news')
+'c:\dossier\tibo\news'
+
