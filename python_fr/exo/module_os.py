@@ -15,4 +15,4 @@ if not os.path.exists(dossier):
 # suppression du dossier
 if os.path.exists(dossier):
     os.removedirs(dossier)
-
+print(os.name)
