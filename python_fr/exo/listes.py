@@ -39,3 +39,37 @@ print(liste_users)
 #ou pour envoyer dans une variable :
 liste_trié=sorted(liste_users)
 print(liste_trié)
+
+# inverser une liste :
+liste_a_inverser=["u10","a20","b16","v12"]
+liste_a_inverser.reverse()
+print(liste_a_inverser)
+
+# retirer un élément de la liste par son index :
+ma_liste=["u0","u1","u2","u3","u4"]
+le_pop=ma_liste.pop(-1)
+print(ma_liste)
+print(le_pop)
+
+# vider une liste
+liste_a_vider=["u0","u1","u2","u3","u4"]
+liste_a_vider.clear()
+print(liste_a_vider)
+
+# transformer une chaine de caractère en liste
+courses = "Riz, Pomme, Lait, Salade, Saumon, Beurre"
+courses = courses.split(", ")
+print(courses)
+
+# vérifier q'une occurence est dans la liste
+#a faire avant un remove
+courses=['Riz', 'Pomme', 'Lait', 'Salade', 'Saumon', 'Beurre']
+if 'Riz' in courses:
+    print(f"il y a 'riz' dans la liste")
+#comparateur in :
+test = 'jour' in 'bonjour'
+print(test)
+
+# listes imbriquées :
+liste = ["e1",["e2-1","e2-2"]]
+print(liste[1][1][2:])
